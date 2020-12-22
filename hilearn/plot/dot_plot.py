@@ -5,7 +5,7 @@ from sklearn import linear_model
 
 def corr_plot(x, y, max_num=10000, outlier=0.01, line_on=True,
               corr_on=True, size=30, dot_color=None, outlier_color="r",
-              alpha=0.8, color_rate=10): #"deepskyblue"
+              alpha=0.8, color_rate=10,linewidth=2): #"deepskyblue"
     score = st.pearsonr(x, y)
     np.random.seed(0)
     if len(x) > max_num:
