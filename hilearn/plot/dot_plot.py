@@ -36,7 +36,7 @@ def corr_plot(x, y, max_num=10000, outlier=0.01, line_on=True,
         clf.fit(x.reshape(-1,1), y)
         xx = np.linspace(x.min(), x.max(), 1000).reshape(-1,1)
         yy = clf.predict(xx)
-        plt.plot(xx, yy, "k--", label="R=%.3f" %score[0])
+        plt.plot(xx, yy, "k--", label="R=%.3f" %score[0],linewidth=linewidth)
         # plt.plot(xx, yy, "k--")
 
     if corr_on:
